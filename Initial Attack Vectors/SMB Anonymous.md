@@ -1,0 +1,1 @@
+crackmapexec smb hosts.txt -u ‘’ -p ‘’ —shares
