@@ -2,7 +2,7 @@
   
 Through metasploit - with a password
 - use exploit/windows/smb/psexec
-![[/Untitled 15.png|Untitled 15.png]]
+![Untitled 15.png](/Untitled%2015.png)
 Through metasploit - with a hash
 - use exploit/windows/smb/psexec as well (just put the hash in for SMBPass instead of a password)
   

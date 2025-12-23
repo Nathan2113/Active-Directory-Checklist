@@ -6,8 +6,10 @@ When enumerating shares on a domain, add the DC into /etc/hosts and run this com
     
     - if anonymous, just do any user then blank password
     
-![[../assets/Crackmapexec/image 223.png|image 223.png]]
-  
+
+
+![](assets/Crackmapexec/image%20223.png)
+
 crackmapexec smb <IP> -u <user> -p <pass>
 - tells you if the smb is pwned
   
@@ -26,28 +28,28 @@ dumping lsa with crackmapexec
   
 Enumerating smb shares on a subnet
 - crackmapexec smb 192.168.56.0/24
-![[../assets/Crackmapexec/image 1 162.png|image 1 162.png]]
+![image 1 162.png](../assets/Crackmapexec/image%201%20162.png)
   
 Enumerating for anonymous access on a subnet
-![[../assets/Crackmapexec/image 2 142.png|image 2 142.png]]
+![image 2 142.png](../assets/Crackmapexec/image%202%20142.png)
   
 Enumerating all the users in the domain unauthenticated
 - crackmapexec smb 192.168.56.0/24 -u ‘’ -p ‘’ —users
-![[../assets/Crackmapexec/image 3 126.png|image 3 126.png]]
+![image 3 126.png](../assets/Crackmapexec/image%203%20126.png)
 - can maybe even give a password
   
 Checking the password policy
 - crackmapexec smb 192.168.56.0/24 -u <user> -p <pass> —pass-pol
-![[../assets/Crackmapexec/image 4 114.png|image 4 114.png]]
+![image 4 114.png](../assets/Crackmapexec/image%204%20114.png)
   
 Enumerating shares
 - crackmapexec smb 192.168.56.0/24 -u <user> -p <pass> —shares
-![[../assets/Crackmapexec/image 5 110.png|image 5 110.png]]
+![image 5 110.png](../assets/Crackmapexec/image%205%20110.png)
 - also shows your user’s permissions in those shares
   
 Checking logged on users with an admin account
 - crackmapexec smb <IP> -u <user> -p <pass> —loggedon-users
-![[../assets/Crackmapexec/image 6 98.png|image 6 98.png]]
+![image 6 98.png](../assets/Crackmapexec/image%206%2098.png)
   
 dumping lsa with an admin account
 - crackmapexec <IP> -u <user> -p <pass> —lsa
@@ -59,7 +61,7 @@ dumping lsa with an admin account
   
 dumping sam with admin
 - crackmapexec <IP> -u <user> -p <pass> —sam
-![[../assets/Crackmapexec/image 7 94.png|image 7 94.png]]
+![image 7 94.png](../assets/Crackmapexec/image%207%2094.png)
   
 if a company doesn’t have LAPS, then most of the time the admin password will be the same
   
@@ -72,7 +74,7 @@ dumping the lsass with credentials
   
 Enumerating RIDs
 - crackmapexec smb -u <user> -p ‘’ —rid-brute
-![[../assets/Crackmapexec/image 8 83.png|image 8 83.png]]
+![image 8 83.png](../assets/Crackmapexec/image%208%2083.png)
 netexec can do the same thing as above
   
   

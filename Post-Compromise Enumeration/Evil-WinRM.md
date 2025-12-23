@@ -1,4 +1,4 @@
-![[../assets/Evil-WinRM/Untitled 20.png|Untitled 20.png]]
+![Untitled 20.png](../assets/Evil-WinRM/Untitled%2020.png)
 “evil-winrm -i 10.10.10.10 -u user -p password”
   
 can upload files with “upload”
@@ -9,7 +9,7 @@ can upload files with “upload”
     
   
 Can get mimikatz to work on evil-winrm using these commands
-![[../assets/Evil-WinRM/image 240.png|image 240.png]]
+![image 240.png](../assets/Evil-WinRM/image%20240.png)
 - if this doesn’t work, you can pass in the mimikatz script folder instead
     
     - /opt/privesc/PowerShell/Invoke-Mimikatz
@@ -35,19 +35,19 @@ sometimes you may need to add some info to /etc/krb5.conf in order to login
         kdc = dc.<domain>
         admin_server = dc.<domain>
 ```
-![[../assets/Evil-WinRM/image 1 174.png|image 1 174.png]]
+![image 1 174.png](../assets/Evil-WinRM/image%201%20174.png)
   
 now you need to get the TGT for the user you want to authenticate as
 - impacket-getTGT <DOMAIN/user>:<pass> -dc-ip dc01.infiltrator.htb
-![[../assets/Evil-WinRM/image 2 150.png|image 2 150.png]]
+![image 2 150.png](../assets/Evil-WinRM/image%202%20150.png)
 - you may need to export the ccache file created into KRB5CCNAME (i don’t think this is required)
     
     - export KRB5CCNAME=<ccache_file_name> (shown from the above output)
     
-![[../assets/Evil-WinRM/image 3 133.png|image 3 133.png]]
+![image 3 133.png](../assets/Evil-WinRM/image%203%20133.png)
   
 - now login to evil-winrm with the newly created ticket ccache file
-![[../assets/Evil-WinRM/image 4 116.png|image 4 116.png]]
+![image 4 116.png](../assets/Evil-WinRM/image%204%20116.png)
 - KRB5CCNAME=<user_ccache> evil-winrm -i <dc01.domain> -u <user> -r <DOMAIN>
   
 use -s flag to use evil-winrm with script capability

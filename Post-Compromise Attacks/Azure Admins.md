@@ -37,4 +37,4 @@ Write-Host ("Domain: " + $domain.Domain)
 Write-Host ("Username: " + $username.Username)
 Write-Host ("Password: " + $password.Password)
 ```
-![[../assets/Azure Admins/image 252.png|image 252.png]]
+![image 252.png](../assets/Azure%20Admins/image%20252.png)

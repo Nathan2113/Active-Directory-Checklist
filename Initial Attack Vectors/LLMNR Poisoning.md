@@ -10,7 +10,7 @@
     
     - like putting your IP address into the file system
     
-![[/Untitled 13.png|Untitled 13.png]]
+![Untitled 13.png](/Untitled%2013.png)
 - Step 3: Get the hashes
     
     - responder will return the NTLMv2 hash

@@ -3,9 +3,9 @@ set up /etc/krb5.conf
     
     - using linwinpwn will set up /etc/krb5.conf correctly
     
-![[../assets/Getting User’s Kerberos Ticket/image 238.png|image 238.png]]
+![image 238.png](../assets/Getting%20User%E2%80%99s%20Kerberos%20Ticket/image%20238.png)
 - go to config menu
-![[../assets/Getting User’s Kerberos Ticket/image 1 172.png|image 1 172.png]]
+![image 1 172.png](../assets/Getting%20User%E2%80%99s%20Kerberos%20Ticket/image%201%20172.png)
 - choose option 5
   
 - change vintage.htb to domain name

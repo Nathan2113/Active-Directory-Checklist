@@ -17,13 +17,13 @@ First thing to do when opening mimikatz
     
     - gives permission to run all the attacks we want
     
-![[/Untitled 27.png|Untitled 27.png]]
-![[/Untitled 1 14.png|Untitled 1 14.png]]
+![Untitled 27.png](/Untitled%2027.png)
+![Untitled 1 14.png](/Untitled%201%2014.png)
 - sekurlsa options
 can look for cleartext credentials or NTLM hashes with the dump
-![[/Untitled 2 14.png|Untitled 2 14.png]]
+![Untitled 2 14.png](/Untitled%202%2014.png)
 - the cleartext above will only show up if there is a network fileshare
-![[/Untitled 3 11.png|Untitled 3 11.png]]
+![Untitled 3 11.png](/Untitled%203%2011.png)
 - this cleartext doesn’t show up in lsassy or secretsdump, which means that mimikatz does some extra stuff
   
   

@@ -26,4 +26,4 @@ get the NT hash
   
   
 can also user certipy apparently
-![[../../assets/Shadow Credentials/image 410.png|image 410.png]]
+![image 410.png](../../assets/Shadow%20Credentials/image%20410.png)

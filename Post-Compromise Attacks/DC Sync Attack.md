@@ -23,11 +23,11 @@ To perform a DcSync attack, we may need to get a user permission to do so first
   
 If a user is part of the “Windows Exchange Permissions” group, then they have WriteDacl permissions over the domain, meaning that user can give a user DcSync permissions
 - first, set up powerview on an http server
-![[../assets/DC Sync Attack/image 254.png|image 254.png]]
-![[../assets/DC Sync Attack/image 1 184.png|image 1 184.png]]
+![image 254.png](../assets/DC%20Sync%20Attack/image%20254.png)
+![image 1 184.png](../assets/DC%20Sync%20Attack/image%201%20184.png)
 then use [secretsdump.py](http://secretsdump.py) to dump NTDS.dit with the new user’s information
 - in the case above, the new user info is “john:abc123!”
-![[../assets/DC Sync Attack/image 2 158.png|image 2 158.png]]
+![image 2 158.png](../assets/DC%20Sync%20Attack/image%202%20158.png)
 ```JavaScript
 secretsdump.py '<user>:<pass>@<IP>'
 --just-dc-ntlm to dump NT hashes

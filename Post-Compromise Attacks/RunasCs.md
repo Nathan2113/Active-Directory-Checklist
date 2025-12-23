@@ -10,15 +10,15 @@ https://github.com/antonioCoco/RunasCs.git
         
     
   
-![[../assets/RunasCs/image 250.png|image 250.png]]
+![image 250.png](../assets/RunasCs/image%20250.png)
 - in a svc_winrm session, running powershell with the svc_ldap user to get a rev shell
   
-![[../assets/RunasCs/image 1 181.png|image 1 181.png]]
+![image 1 181.png](../assets/RunasCs/image%201%20181.png)
   
 if the computer is using runas, they potentially have saved creds, and you can use those saved creds to execute commands you otherwise shouldn’t have
 - for example, if the saved creds is for an administrator account, you can have a low level user access
 - to check if any creds are saved, use “cmdkey /list”
-![[../assets/RunasCs/image 2 155.png|image 2 155.png]]
+![image 2 155.png](../assets/RunasCs/image%202%20155.png)
 - with these saved creds, we can do whatever that user can
   
-![[../assets/RunasCs/image 3 136.png|image 3 136.png]]
+![image 3 136.png](../assets/RunasCs/image%203%20136.png)

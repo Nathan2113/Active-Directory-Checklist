@@ -40,7 +40,7 @@ ldapsearch -H ldap://<IP> -x -b "DC=<DOMAIN>,DC=<DOMAIN>" '(objectClass=person)'
 ```
   
 if you see the following, the machine doesn’t allow anonymous binds
-![[../assets/LDAP/image 227.png|image 227.png]]
+![image 227.png](../assets/LDAP/image%20227.png)
   
 windapsearch
 - need to look into
